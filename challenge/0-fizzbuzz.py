@@ -1,28 +1,29 @@
 #!/usr/bin/python3
 """
-FizzBuzz module
+FizzBuzz implementation
 """
 import sys
 
 
 def fizzbuzz(n):
     """
-    FizzBuzz function
+    FizzBuzz function that prints numbers from 1 to n.
+    15 and multiples of 15 print FizzBuzz instead of Fizz or Buzz.
     """
     if n < 1:
         return
 
-    res = []
+    tmp_nos = []
     for i in range(1, n + 1):
         if i % 3 == 0 and i % 5 == 0:
-            res.append("FizzBuzz")
+            tmp_nos.append("FizzBuzz")
         elif i % 3 == 0:
-            res.append("Fizz")
+            tmp_nos.append("Fizz")
         elif i % 5 == 0:
-            res.append("Buzz")
+            tmp_nos.append("Buzz")
         else:
-            res.append(str(i))
-    print(" ".join(res))
+            tmp_nos.append(str(i))
+    print(" ".join(tmp_nos))
 
 
 if __name__ == "__main__":

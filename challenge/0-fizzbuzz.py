@@ -7,7 +7,7 @@ import sys
 
 def fizzbuzz(n):
     """
-    FizzBuzz function
+    Prints numbers 1 to n with Fizz, Buzz, and FizzBuzz replacements
     """
     if n < 1:
         return

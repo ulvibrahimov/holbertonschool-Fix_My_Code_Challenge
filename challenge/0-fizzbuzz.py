@@ -7,8 +7,7 @@ import sys
 
 def fizzbuzz(n):
     """
-    FizzBuzz function that prints numbers from 1 to n.
-    15 and multiples of 15 print FizzBuzz instead of Fizz or Buzz.
+    FizzBuzz function
     """
     if n < 1:
         return
